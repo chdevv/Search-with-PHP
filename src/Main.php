@@ -1,13 +1,12 @@
 <?php
 
-
-
 require_once "bootstrap.php";
 
 use src\Conexao;
 
+
+$tituloPais = file_get_contents("php://input");
 $conexao = Conexao::onlyInstance();
-$prepare = $conexao->prepare("select * from buscas_dados");
-$prepare->execute();
-$data = $prepare->fetch(\PDO::FETCH_ASSOC);
-print_r($data);
+$prepare = $conexao->prepare("select buscas_dados from buscas_dados where titulo like :tituloPais limit 5");
+$prepare->execute(["tituloPais" => $tituloPais . "%"]);
+$data = $prepare->fetchAll(\PDO::FETCH_ASSOC);
