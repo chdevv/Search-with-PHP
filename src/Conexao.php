@@ -14,7 +14,7 @@ class Conexao{
   public static $instance;
 
   public static function onlyInstance(){
-    if(self::$instance){
+    if(self::$instance == null){
       self::$instance = new \PDO(
         DB_HOST .
         DB_NAME,
