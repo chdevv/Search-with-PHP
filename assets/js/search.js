@@ -1,14 +1,27 @@
-function atribueELement(element,valueData){
+const inputSearch = document.querySelector("input-search")
+
+
+function addInElementFather(elementassigned){
+  const datalist = document.querySelector(".datalistOptions")
+  datalist.appendChild(elementassigned);
+}
+
+function setAtribueELement(element,valueData){
   element.value = valueData
   return element
 }
 
-function createELement(){
-  const datalist = document.querySelector(".datalistOptions")
+function createELements(){
   const elementCreated = document.createElement("option")
+  const elementassigned = setAtribueELement(elementCreated, valueData)
+  addInElementFather(elementassigned)
 }
 
-createELement()
+
+inputSearch.addEventListener("keydown", (event) => {
+  console.log(event)
+  console.log("oi")
+})
 //insira um elemento ao datalist para testar.
 
 
