@@ -16,7 +16,7 @@
       <option value="ff"></option>
     </datalist>
   </div>
-  <script scr="assets/js/bootstrap/bootstrap.min.js"></script>
-  <script scr="assets/js/search.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/search.js"></script>
 </body>
 </html>

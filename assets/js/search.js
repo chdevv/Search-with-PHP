@@ -1,4 +1,4 @@
-const inputSearch = document.querySelector("input-search")
+const inputSearch = document.querySelector(".input-search")
 
 
 function addInElementFather(elementassigned){
@@ -19,8 +19,7 @@ function createELements(){
 
 
 inputSearch.addEventListener("keydown", (event) => {
-  console.log(event)
-  console.log("oi")
+  console.log(event.key)
 })
 //insira um elemento ao datalist para testar.
 
