@@ -1,0 +1,15 @@
+{
+    "name": "vui/search-with-php",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Chdevv",
+            "email": "diesknot@gmail.com"
+        }
+    ],
+    "require": {}
+}
