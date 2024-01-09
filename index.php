@@ -11,7 +11,7 @@
   <h1>Sistema de Busca em PHP</h1>
   <div class="search">
     <label for="exampleDataList" class="form-label">Datalist example</label>
-    <input class="form-control input-search" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+    <input type="text" class="form-control input-search" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
     <datalist id="datalistOptions">
       <option value="ff"></option>
     </datalist>
